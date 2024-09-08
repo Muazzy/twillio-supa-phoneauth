@@ -1,0 +1,1 @@
+enum VerificationMode { login, register }
