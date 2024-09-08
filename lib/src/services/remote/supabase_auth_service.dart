@@ -184,23 +184,6 @@ class SupabaseAuthService with ListenableServiceMixin {
     }
   }
 
-  Future<bool> resendOTP(String phoneNumber) async {
-    if (!_connectivityService.isInternetConnected) {
-      throw CustomNoInternetException(message: 'No Internet Connection');
-    }
-    try {
-      final otpResponse = await _supabase.auth.signInWithOtp(
-        phone: phoneNumber,
-      );
-
-      return true;
-    } on AuthApiException catch (e) {
-      throw AuthExcepection(message: e.message);
-    } catch (e) {
-      rethrow;
-    }
-  }
-
   Future<bool> checkUserExistsWithPhoneNumber(String phoneNumber) async {
     try {
       print('checkUserExistsWithPhoneNumber called');
