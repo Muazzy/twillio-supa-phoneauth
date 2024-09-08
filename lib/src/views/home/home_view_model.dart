@@ -6,7 +6,9 @@ class HomeViewModel extends ReactiveViewModel with SupabaseAuthViewModel {
   init() {}
 
   onClickLogout() async {
+    setBusy(true);
     await supabaseAuthService.logout();
+    setBusy(false);
     NavService.login();
   }
 }

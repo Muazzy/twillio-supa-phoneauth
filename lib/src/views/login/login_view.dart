@@ -1,3 +1,4 @@
+import 'package:phone_auth_twillio/src/shared/custom_app_bar.dart';
 import 'package:phone_auth_twillio/src/shared/custom_phone_number_field.dart';
 import 'package:phone_auth_twillio/src/shared/main_button.dart';
 import 'package:phone_auth_twillio/src/shared/spacing.dart';
@@ -31,7 +32,12 @@ class LoginView extends StackedView<LoginViewModel> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                VerticalSpacing(100.h),
+                // VerticalSpacing(100.h),
+                const CustomAppBar(
+                  titleText: 'Login',
+                  showBackButton: false,
+                ),
+                const Spacer(),
                 CustomPhoneNumberField(
                   controller: model.phoneController,
                   initialCountryCodeOrPrefix: model.initialCountryCodeOrPrefix,

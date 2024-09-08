@@ -21,11 +21,6 @@ class VerifyOtpViewModel extends ReactiveViewModel with SupabaseAuthViewModel {
   });
 
   final otpController = TextEditingController();
-  @override
-  void dispose() {
-    otpController.dispose();
-    super.dispose();
-  }
 
   init() {}
 
