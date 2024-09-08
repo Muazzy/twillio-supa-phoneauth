@@ -2,13 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<!-- for url launcher -->
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-  		<string>sms</string>
-  		<string>tel</string>
-	</array>
-	<!-- for url launcher -->
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
@@ -48,16 +41,6 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>Example allows you to personalize your profile with a unique image and also upload pictures while registering vehicles. For this, we need access to your photo library.</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Example uses your location to help you find nearby service providers and service requests.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Example uses your location to help you find nearby service providers and service requests.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Example uses your location to help you find nearby service providers and service requests.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Example allows you to personalize your profile with a unique image and also upload pictures while registering vehicles. For this, we need access to your photo library.</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CADisableMinimumFrameDurationOnPhone</key>

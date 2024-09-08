@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:phone_auth_twillio/src/styles/text_theme.dart';
 import 'package:stacked/stacked.dart';
-import 'package:phone_auth_twillio/generated/assets.dart';
 import 'package:phone_auth_twillio/src/base/utils/utils.dart';
 
 import 'login_view_model.dart';
